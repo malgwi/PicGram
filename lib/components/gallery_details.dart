@@ -10,7 +10,7 @@ Widget imageGalleryDetail() {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Maui Summer',
+              'Beach Summer',
               style: GoogleFonts.montserrat(
                 fontSize: 15.0,
                 fontWeight: FontWeight.bold,
@@ -20,7 +20,7 @@ Widget imageGalleryDetail() {
             Row(
               children: <Widget>[
                 Text(
-                  'Teresa Soto added 52 Photos',
+                  'Sunday Malgwi added 52 Photos',
                   style: GoogleFonts.montserrat(
                     fontSize: 11.0,
                     color: Colors.grey.shade700,
@@ -44,7 +44,7 @@ Widget imageGalleryDetail() {
             )
           ],
         ),
-        SizedBox(width: 70.0),
+        SizedBox(width: 50.0),
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
