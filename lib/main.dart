@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
+import 'screens/profile.dart';
 
 void main() => runApp(new MyApp());
 
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
       initialRoute: MyHomePage.id,
       routes: {
         MyHomePage.id: (context) => MyHomePage(),
+        ProfilePage.id: (context) => ProfilePage(),
       },
     );
   }

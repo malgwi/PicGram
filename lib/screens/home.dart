@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_app/components/gallery_details.dart';
 import 'package:travel_app/components/image_grid.dart';
+import 'package:travel_app/screens/profile.dart';
 
 class MyHomePage extends StatefulWidget {
   static const String id = 'home';
@@ -59,16 +60,27 @@ class _MyHomePageState extends State<MyHomePage>
                 ),
                 SizedBox(width: 5.0),
                 InkWell(
-                  child: Container(
-                    height: 50.0,
-                    width: 50.0,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25.0),
-                      image: DecorationImage(
-                        image: AssetImage('images/person.jpg'),
+                  child: Hero(
+                    tag: 'images/person.jpg',
+                    child: Container(
+                      height: 50.0,
+                      width: 50.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25.0),
+                        image: DecorationImage(
+                          image: AssetImage('images/person.jpg'),
+                        ),
                       ),
                     ),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => new ProfilePage(),
+                      ),
+                    );
+                  },
                 )
               ],
             ),
